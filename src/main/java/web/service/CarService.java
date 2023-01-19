@@ -8,9 +8,9 @@ import java.util.List;
 
 @Component
 public class CarService {
-    private List<Car> cars;
+    private final List<Car> cars;
 
-//    public CarService(List<Car> cars)
+    public CarService()
     {
         cars = new ArrayList<>();
         cars.add(new Car(1, "car1", 1));
